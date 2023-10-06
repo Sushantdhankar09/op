@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Super Organic store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header
+            class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+            <div class="col-md-3 mb-2 mb-md-0">
+                <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+                    <div class="logo-img"><img src="organic-store-logo5.svg"></div>
+                    
+                </a>
+            </div>
+            <div class="header-option">
+                <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="index.html" class="nav-link px-2 link-secondary">Home</a></li>
+                    <li><a href="about.html" class="nav-link px-2 ">About</a></li>
+                    <li><a href="contact.html" class="nav-link px-2">Contact</a></li>
+                    <li><a href="review.html" class="nav-link px-2">Review</a></li>
+                    <li><a href="cart.html" class="nav-link px-2">Cart</a></li>
+
+                </ul>
+            </div>
+            <div class="col-md-3 text-end">
+                <button type="button" class="btn btn-outline-success me-2" data-bs-toggle="modal"
+                    data-bs-target="#loginModal">LogIn</button>
+                <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                    data-bs-target="#signupModal">SignUp</button>
+            </div>
+        </header>
+    </div>
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+        </div>
+        <div class="container-fluid">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="spices-1.jpeg" class="d-block w-100" alt="">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Hand Made Spices</h5>
+                        <p>One of the best spices.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="spices-2.jpeg" class="d-block w-100" alt="">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Spices & Seasoning</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="spices-3.jpeg" class="d-block w-100" alt="">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Grains & Cereals</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="spices-2.jpeg" class="d-block w-100" alt="">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Grains & Cereals</h5>
+                        <p>Some representative placeholder content for the fourth slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="spices-3.jpeg" class="d-block w-100" alt="">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Spices & Seasoning</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <div class="container text-center">
+        <div class="row my-4">
+            <div class="col-3  border ">
+                <strong>10% Flat Discount</strong>
+            </div>
+            <div class="col-3 border">
+                <strong>Best Quality </strong>
+            </div>
+            <div class="col-3 border">
+                <strong>Low Pricing</strong>
+            </div>
+            <div class="col-3 border">
+                <strong>Free Delivery</strong>
+            </div>
+        </div>
+    </div>
+
+    <!--login-Modal -->
+    <div class="login-modal">
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="loginModalLabel">LogIn</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <form>
+                        <!-- Email input -->
+                        <label class="form-label" for="form2Example1">Email address/Number</label>
+                        <div class="form-outline m-2">
+                            <input type="email" id="form2Example1" class="form-control" />
+
+                        </div>
+
+                        <!-- Password input -->
+                        <label class="form-label" for="form2Example2">Password</label>
+                        <div class="form-outline m-2">
+                            <input type="password" id="form2Example2" class="form-control" />
+                        </div>
+
+                        <!-- 2 column grid layout for inline styling -->
+                        <div class="row mb-4">
+                            <div class="col d-flex justify-content-center">
+                                <!-- Checkbox -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="form2Example31"
+                                        checked />
+                                    <label class="form-check-label" for="form2Example31"> Remember me </label>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <!-- Simple link -->
+                                <a href="#!">Forgot password?</a>
+                            </div>
+                        </div>
+
+                        <!-- Submit button -->
+                        <button type="button" class="btn btn-primary btn-block m-4">Log In</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--signup-Modal -->
+    <div class="signup-modal">
+        <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="signupModalLabel">SignUp</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <form>
+                        <!-- Name input -->
+                        <label class="form-label" for="form2Example1">Full name</label>
+                        <div class="form-outline m-2">
+                            <input type="email" id="form2Example1" class="form-control" />
+
+                        </div>
+                        <!-- Email input -->
+                        <label class="form-label" for="form2Example1">Email address/Number</label>
+                        <div class="form-outline m-2">
+                            <input type="email" id="form2Example1" class="form-control" />
+
+                        </div>
+
+                        <!-- Password input -->
+                        <label class="form-label" for="form2Example2">Password</label>
+                        <div class="form-outline m-2">
+                            <input type="password" id="form2Example2" class="form-control" />
+                        </div>
+                        <!--Confirm Password input -->
+                        <label class="form-label" for="form2Example2">Confirm password</label>
+                        <div class="form-outline m-2">
+                            <input type="password" id="form2Example2" class="form-control" />
+                        </div>
+                        <!-- Submit button -->
+                        <button type="button" class="btn btn-primary btn-block m-4">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </header>
+    </div>
+    <div class="product">Products</div>
+    <div class="album py-5 bg-body-tertiary">
+        <div class="container">
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="edible-oil-300x300.jpg" class="bd-placeholder-img card-img-top" width="100%"
+                            height="325px" xmlns="http://www.w3.org/2000/svg" role="img"
+                            aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"
+                            alt="">
+
+                        <div class="card-body">
+                            <p class="card-text">Olive Oil.
+                                <br>
+                                <small>1Kg olive oil</small>
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to cart</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                                </div>
+                                <small class="text-body-secondary">Quantity</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="orange.jpg" class="bd-placeholder-img card-img-top" width="100%" height="325"
+                            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                            preserveAspectRatio="xMidYMid slice" focusable="false" alt="">
+                        <div class="card-body">
+                            <p class="card-text">Orange
+                                <br>
+                                <small> Famous orange
+                                    45/kg</small>
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to cart</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                                </div>
+                                <small class="text-body-secondary">Quantity</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="sliced-whole-oranges_144627-3973.avif" class="bd-placeholder-img card-img-top"
+                            width="100%" height="325" xmlns="http://www.w3.org/2000/svg" role="img"
+                            aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"
+                            alt="">
+                        <div class="card-body">
+                            <p class="card-text">Orange Juice
+                                <br> <small>
+                                    Orange juice
+                                    1200/bundle </small>
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to cart</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                                </div>
+                                <small class="text-body-secondary">Bundle</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="coffee-asorted-300x300.jpg" class="bd-placeholder-img card-img-top" width="100%"
+                            height="325" xmlns="http://www.w3.org/2000/svg" role="img"
+                            aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"
+                            alt="">
+                        <div class="card-body">
+                            <p class="card-text">Coffee
+                                <br> <small> Assorted coffee 300/pack</small>
+
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to cart</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                                </div>
+                                <small class="text-body-secondary">Packet</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="red-chillies-300x300.jpg" class="bd-placeholder-img card-img-top" width="100%"
+                            height="325" xmlns="http://www.w3.org/2000/svg" role="img"
+                            aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"
+                            alt="">
+                        <div class="card-body">
+                            <p class="card-text">Red Chillies
+                                <br> <small>
+                                    Kashmiri lal mirch
+                                    300/kg</small>
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to cart</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                                </div>
+                                <small class="text-body-secondary">Quantity</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="organic-food-concept-banner-template_23-2148722730.avif"
+                            class="bd-placeholder-img card-img-top" width="100%" height="325"
+                            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                            preserveAspectRatio="xMidYMid slice" focusable="false" alt="">
+                        <div class="card-body">
+                            <p class="card-text">Spices
+                                <br> <small>
+                                    Indian spices </small>
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to cart</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                                </div>
+                                <small class="text-body-secondary">Bundle</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
